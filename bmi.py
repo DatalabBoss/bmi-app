@@ -21,8 +21,8 @@ st.subheader("Health is wealth,Calculate your BMI today")
 
 img = Image.open("bmi.jpeg")
 st.image(img)
-weight = st.number_input("Enter your weight in kg",step=1)
-height = st.number_input("Enter your height in metres",step=1)
+weight = st.number_input("Enter your weight in kg",step=0.1)
+height = st.number_input("Enter your height in metres")
 
 st.sidebar.image("heart.gif")
 st.sidebar.write("BMI is a good indicator of your health. You can easily check your BMI on our app by inputing your weight in kilograms and height in metres, try it out today")
