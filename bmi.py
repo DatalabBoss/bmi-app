@@ -1,6 +1,18 @@
 import streamlit as st
 from PIL import Image
 
+
+
+code = """
+<style>
+    p {
+        color: red;
+    }
+</style>
+"""
+st.html(code)
+st.markdown("Lorem ipsum")
+
 def bmi_calc(w,h):
     bmi = w/(h**2)
     bmi =  round(bmi,1)
