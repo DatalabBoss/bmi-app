@@ -6,7 +6,7 @@ from PIL import Image
 code = """
 <style>
     p {
-        color: red;
+        color: green;
     }
 </style>
 """
