@@ -4,14 +4,17 @@ from PIL import Image
 
 
 code = """
-<style>
-    p {
-        color: green;
-    }
-</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V7H8KS5MKS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V7H8KS5MKS');
+</script>
 """
 st.html(code)
-st.markdown("Lorem ipsum")
 
 def bmi_calc(w,h):
     bmi = w/(h**2)
