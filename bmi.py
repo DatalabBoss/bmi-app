@@ -3,7 +3,8 @@ from PIL import Image
 
 
 
-code = """
+st.markdown(
+    """
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-V7H8KS5MKS"></script>
 <script>
@@ -13,8 +14,9 @@ code = """
 
   gtag('config', 'G-V7H8KS5MKS');
 </script>
-"""
-st.html(code)
+    """,
+    unsafe_allow_html=True,
+)
 
 def bmi_calc(w,h):
     bmi = w/(h**2)
